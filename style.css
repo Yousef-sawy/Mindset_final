@@ -36,6 +36,10 @@ main{
     background-color: blue;    
 }
 
+.toggle-button {
+    display: none; 
+}
+
 
 @media(max-width:800px){
     body{
@@ -54,5 +58,8 @@ main{
     }
     .show{
         display: block;
+    }
+    .toggle-button {
+        display:contents; /* Show when screen width is 800px or less */
     }
 }
