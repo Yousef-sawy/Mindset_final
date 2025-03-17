@@ -7,20 +7,20 @@ body{
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
-    /* "navbar navbar" */
+    "sidebar navbar"
     "sidebar main";
     min-height: 100vh;
 
 }
 
-/* nav{
+nav{
     position: sticky;
     top:0;
     grid-area:navbar;
     background-color: #2b2933 ;
     padding: 1em;
     color: aliceblue;
-} */
+}
 
 aside{
     height: 100vh;
