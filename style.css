@@ -47,6 +47,11 @@ main{
         width: 300px;
         display: none;
     }
+    main{
+        width: 800px;
+
+
+    }
     .show{
         display: block;
     }
