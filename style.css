@@ -7,7 +7,7 @@ body{
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
-    "navbar navbar"
+    "sidebar navbar"
     "sidebar main";
     min-height: 100vh;
 
@@ -17,23 +17,22 @@ nav{
     position: sticky;
     top:0;
     grid-area:navbar;
-    background-color: red;
+    background-color: #2b2933 ;
     padding: 1em;
     color: aliceblue;
 }
 
 aside{
-    height: calc(100vh - 50px);
-    top: 50px;
+    height: 100vh;
     position: sticky;
     align-self: start;
     grid-area:sidebar;
-    background-color: green;
+    background-color: #2b2933;
 }
 
 main{    
     grid-area:main;
-    background-color: blue;    
+    background-color: #1f1e33;    
 }
 
 .toggle-button {
