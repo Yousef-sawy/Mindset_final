@@ -20,6 +20,8 @@ nav{
     background-color: #2b2933 ;
     padding: 1em;
     color: aliceblue;
+    border-bottom: rgb(77, 71, 71) 0.5px solid;
+    
 }
 
 aside{
@@ -28,6 +30,7 @@ aside{
     align-self: start;
     grid-area:sidebar;
     background-color: #2b2933;
+    border-right: rgb(77, 71, 71) 0.5px solid;
 }
 
 main{    
