@@ -7,11 +7,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav> navbar
-        <button class="toggle-button" onclick="toggleSidebar()"><img src="assets\icon-cross.svg" alt="close button"></button>
+
+
+
+    <nav>
+        <div class="navList">
+            <h1>Platform Launch</h1>
+            </button>
+            <div class="addTask">
+                <button class="toggle-button" onclick="toggleSidebar()"><img src="assets\icon-chevron-down.svg" alt="close button">
+                <button class="addTaskButton"><img src="assets\icon-add-task-mobile.svg" alt="add task button">Add New Task</button>
+                <img src="assets\icon-vertical-ellipsis.svg" alt="3 dots">
+            </div>
+        </div>
     </nav>
 
-    <aside id="sidebar"> Sidebar</aside>
+
+
+    <aside id="sidebar"> 
+        
+            <div class="sidebarlogo">
+                <img src="assets\logo-light.svg" alt="logo">
+            </div>
+
+            <div class="sidebarlist">
+                <div class="sideTitle">
+                    <p>All BOARDS (8)</p>
+                </div>
+                
+                <div class="sideItems">
+                    
+                    <button><img src="assets\icon-board.svg" alt="">Platform launch</button>
+                </div>
+
+                <div class="sideItems">
+                    
+                    <button><img src="assets\icon-board.svg" alt="">Marketing Plan</button>
+                </div>
+
+                <div class="sideItems">
+                    
+                    <button><img src="assets\icon-board.svg" alt="">Roadmap</button>
+                </div>
+
+                <div class="sideItems">
+                    
+                    <button><img src="assets\icon-board.svg" alt="">+Create New Board</button>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="theme">
+                    <img src="assets/icon-light-theme.svg" alt="Light Mode">
+                    
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch">
+                        <span class="slider"></span>
+                    </label>
+            
+                    <img src="assets/icon-dark-theme.svg" alt="Dark Mode">
+                </div>
+            
+                <button class="hide-sidebar" onclick="toggleSidebar()" >
+                    <img src="assets/icon-hide-sidebar.svg" alt="Hide Sidebar"> Hide Sidebar
+                </button>
+            </div>
+            
+            
+            
+            
+    </aside>
+
+
+
+
+
+
     <main>
         <section>Main content</section>
     </main>
