@@ -5,7 +5,9 @@ const themeSwitch = document.getElementById("theme-switch");
 
 const logo = document.querySelector(".sidebarlogo img");
 
-
+const taskModal = document.getElementById("taskModal");
+const addTaskButton = document.querySelector(".addTaskButton");
+const taskForm = document.getElementById("taskForm");
 
 
 function toggleSidebar() {
@@ -61,3 +63,29 @@ if (themeSwitch) {
         disableDarkMode();
     }
 }
+
+
+
+// Open the modal
+addTaskButton.addEventListener("click", function () {
+    taskModal.style.display = "flex";
+});
+
+// Close the modal when clicking outside
+window.addEventListener("click", function (event) {
+    if (event.target === taskModal) {
+        closeTaskModal();
+    }
+});
+
+// Close modal function
+function closeTaskModal() {
+    taskModal.style.display = "none";
+}
+
+// Handle form submission (optional)
+taskForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Task Created!"); // Replace this with actual form handling logic
+    closeTaskModal();
+});
